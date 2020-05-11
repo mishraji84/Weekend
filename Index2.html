@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSON Test</title>
+    <script src="Covid.js" type="text/javascript">
+
+    </script>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+body {
+  background-color: rgb(217, 243, 250);
+}
+p{
+    text-align: center;
+    font-size: large;
+    font-family: cursive;
+}
+</style>
+
+
+
+
+<body onload="getCovidData()">
+<p>MP Covid19 Dashboard<p>
+<div id="myData"></div>
+<select id="ST" onchange="getAll1()">
+  <option value="mp">All</option>
+  <option value="mp">Madhya Pradesh</option>
+  <option value="ka">Karnataka</option>
+  </select>
+    
+</body>
+</head>
+</html>
